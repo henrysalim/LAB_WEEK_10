@@ -29,5 +29,5 @@ interface TotalDao {
 
     // @Query is used to define a custom query, usually to select rows
     @Query("SELECT * FROM total WHERE id = :id")
-    fun getTotal(id: Long): List<Total>
+    fun getTotal(id: Long): Total
 }
